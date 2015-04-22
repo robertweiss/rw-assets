@@ -1,0 +1,81 @@
+html {
+    font-size: .9em;
+
+    @include mq-min($sm){
+        font-size: 1em;
+    }
+}
+
+body {
+    font-family: $font;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol {
+    margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: $head;
+    margin-bottom: .5rem;
+}
+
+h2 {
+    font-size: $lead;
+    margin-bottom: .5rem;
+}
+
+h3 {
+    font-size: $copy;
+    margin-bottom: .25rem;
+}
+
+h4 {
+    font-size: $copy;
+    margin-bottom: 0;
+}
+
+p,
+ul {
+    font-size: $copy;
+    line-height: 1.4;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list {
+    li {
+        position: relative;
+        margin-left: 1em;
+        &:before {
+            position: absolute;
+            content: "\2013 \0020";
+            margin-left: -1em;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+small,
+.small,
+.caption {
+    font-size: $caption;
+}

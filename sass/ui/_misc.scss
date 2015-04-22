@@ -1,0 +1,25 @@
+.ui-center {
+    text-align: center;
+}
+
+// –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+// Inline Bilder
+// –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.align_left,
+.align_right {
+    margin-bottom: 1rem;
+    @include mq-max($sm){
+        width: 100%;
+    }
+}
+
+.align_left {
+    float: left;
+    margin-right: 1rem;
+}
+
+.align_right {
+    float: right;
+    margin-left: 1rem;
+}

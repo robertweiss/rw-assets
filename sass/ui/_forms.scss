@@ -1,0 +1,29 @@
+// –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+// Allgemein
+// –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+input,
+button {
+    outline: none;
+}
+
+.ui-input {
+    padding: .35rem .5rem;
+    border: 0;
+    width: 100%;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.ui-input__button {
+    transition: .1s;
+
+    &:hover {
+
+    }
+
+    &:active {
+
+    }
+}
