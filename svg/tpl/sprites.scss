@@ -1,0 +1,45 @@
+$icons: (
+    {{#shapes}}
+    {{base}}: ({{width.inner}}, {{height.inner}}){{^last}},{{/last}}
+    {{/shapes}}
+);
+
+.icon {
+    font-size: 1.5em;
+    position: relative;
+    display: inline-block;
+    fill: currentColor;
+}
+
+@each $icon, $size in $icons {
+    $height: nth($size, 2) / nth($size, 1);
+    .icon__#{$icon} {
+        width: 1em;
+        height: #{$height}em;
+
+        &-_5x {
+            width: .5em;
+            height: .5em * $height;
+        }
+
+        &-1_5x {
+            width: 1.5em;
+            height: 1.5em * $height;
+        }
+
+        &-2x {
+            width: 2em;
+            height: 2em * $height;
+        }
+
+        &-3x {
+            width: 3em;
+            height: 3em * $height;
+        }
+
+        &-4x {
+            width: 4em;
+            height: 4em * $height;
+        }
+    }
+}
